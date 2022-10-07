@@ -25,6 +25,9 @@ public extension Templates {
         /// The padding around the content view.
         public var padding = CGFloat(16)
         
+        /// The arrow's side padding
+        public var arrowSidePadding: CGFloat = 1.8
+        
         ///  The container's shadow style
         public var shadow: Shadow = .system
 
@@ -44,6 +47,7 @@ public extension Templates {
             cornerRadius: CGFloat = CGFloat(12),
             backgroundColor: Color = Color(.systemBackground),
             padding: CGFloat = CGFloat(16),
+            arrowSidePadding: CGFloat = 1.8,
             shadow: Shadow = .system,
             @ViewBuilder view: () -> Content
         ) {
@@ -51,6 +55,7 @@ public extension Templates {
             self.cornerRadius = cornerRadius
             self.backgroundColor = backgroundColor
             self.padding = padding
+            self.arrowSidePadding = arrowSidePadding
             self.view = view()
         }
 
@@ -61,7 +66,8 @@ public extension Templates {
                     .background(
                         BackgroundWithArrow(
                             arrowSide: arrowSide ?? context.attributes.position.getArrowPosition(),
-                            cornerRadius: cornerRadius
+                            cornerRadius: cornerRadius,
+                            arrowSidePadding: arrowSidePadding
                         )
                         .fill(backgroundColor)
                         .shadow(
