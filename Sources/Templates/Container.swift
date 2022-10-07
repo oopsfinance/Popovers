@@ -24,10 +24,10 @@ public extension Templates {
 
         /// The padding around the content view.
         public var padding = CGFloat(16)
-        
+
         /// The arrow's side padding
         public var arrowSidePadding: CGFloat = 1.8
-        
+
         ///  The container's shadow style
         public var shadow: Shadow = .system
 

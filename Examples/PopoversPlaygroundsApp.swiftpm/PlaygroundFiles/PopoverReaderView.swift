@@ -29,7 +29,7 @@ struct PopoverReaderView: View {
                         .bottom,
                         .right,
                         .top,
-                        .left,
+                        .left
                     ]
                 )
             }

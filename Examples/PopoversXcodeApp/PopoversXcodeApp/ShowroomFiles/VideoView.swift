@@ -39,7 +39,7 @@ struct VideoView: View {
                         .bottomRight, /// it's ok if you have duplicates
                         .bottomLeft,
                         .topRight,
-                        .topLeft,
+                        .topLeft
                     ]
                 )
                 $0.presentation.animation = .spring(

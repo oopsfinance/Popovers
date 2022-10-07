@@ -32,7 +32,7 @@ struct NotificationView: View {
                 $0.sourceFrameInset = UIEdgeInsets(16)
                 $0.position = .relative(
                     popoverAnchors: [
-                        .top,
+                        .top
                     ]
                 )
                 $0.presentation.animation = .spring()

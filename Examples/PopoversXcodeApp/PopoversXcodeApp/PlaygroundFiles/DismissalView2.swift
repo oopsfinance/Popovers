@@ -30,7 +30,7 @@ struct DismissalView2: View {
                             .left,
                             .right,
                             .bottom,
-                            .top,
+                            .top
                         ]
                     )
                     $0.dismissal.mode = .tapOutside

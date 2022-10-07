@@ -16,7 +16,7 @@ struct PopoverContainerView: View {
     @ObservedObject var popoverModel: PopoverModel
 
     /// The currently-dragging popover.
-    @State var selectedPopover: Popover? = nil
+    @State var selectedPopover: Popover?
 
     /// How much to offset the currently-dragging popover.
     @State var selectedPopoverOffset: CGSize = .zero

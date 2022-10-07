@@ -46,8 +46,3 @@ struct StandardView: View {
         }
     }
 }
-
-
-
-
-

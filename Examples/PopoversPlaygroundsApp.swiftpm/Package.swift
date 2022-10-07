@@ -10,7 +10,7 @@ import PackageDescription
 let package = Package(
     name: "PopoversPlaygroundsApp",
     platforms: [
-        .iOS("15.2"),
+        .iOS("15.2")
     ],
     products: [
         .iOSApplication(
@@ -24,26 +24,26 @@ let package = Package(
             accentColorAssetName: "AccentColor",
             supportedDeviceFamilies: [
                 .pad,
-                .phone,
+                .phone
             ],
             supportedInterfaceOrientations: [
                 .portrait,
                 .landscapeRight,
                 .landscapeLeft,
-                .portraitUpsideDown(.when(deviceFamilies: [.pad])),
+                .portraitUpsideDown(.when(deviceFamilies: [.pad]))
             ]
-        ),
+        )
     ],
     dependencies: [
-        .package(url: "https://github.com/aheze/Popovers", "1.0.0" ..< "2.0.0"),
+        .package(url: "https://github.com/aheze/Popovers", "1.0.0" ..< "2.0.0")
     ],
     targets: [
         .executableTarget(
             name: "AppModule",
             dependencies: [
-                .product(name: "Popovers", package: "popovers"),
+                .product(name: "Popovers", package: "popovers")
             ],
             path: "."
-        ),
+        )
     ]
 )

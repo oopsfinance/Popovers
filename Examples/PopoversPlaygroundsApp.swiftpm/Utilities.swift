@@ -20,7 +20,7 @@ struct ExampleRow: View {
     let image: String
     let title: String
     let color: UInt
-    var action: (() -> Void)? = nil
+    var action: (() -> Void)?
 
     var body: some View {
         Button(action: action ?? {}) {
@@ -50,7 +50,7 @@ struct ExampleRow: View {
                         LinearGradient(
                             colors: [
                                 Color(uiColor: UIColor(hex: color).offset(by: 0.2)),
-                                Color(uiColor: UIColor(hex: color)),
+                                Color(uiColor: UIColor(hex: color))
                             ],
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing
@@ -89,7 +89,7 @@ struct ExampleImage: View {
                 LinearGradient(
                     colors: [
                         Color(uiColor: color),
-                        Color(uiColor: color.offset(by: 0.06)),
+                        Color(uiColor: color.offset(by: 0.06))
                     ],
                     startPoint: .bottom,
                     endPoint: .top

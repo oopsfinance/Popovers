@@ -30,7 +30,7 @@ struct TutorialView: View {
             attributes: {
                 $0.position = .relative(
                     popoverAnchors: [
-                        .center,
+                        .center
                     ]
                 )
 
@@ -261,7 +261,7 @@ struct PhoneView<Content: View>: View {
                     LinearGradient(
                         colors: [
                             Color(uiColor: UIColor(hex: 0x34788A)),
-                            Color.black,
+                            Color.black
                         ],
                         startPoint: .topLeading,
                         endPoint: .bottomTrailing
@@ -278,7 +278,7 @@ struct PhoneView<Content: View>: View {
                             LinearGradient(
                                 colors: [
                                     Color(uiColor: .systemBlue),
-                                    Color(uiColor: .systemTeal),
+                                    Color(uiColor: .systemTeal)
                                 ],
                                 startPoint: .bottom,
                                 endPoint: .top

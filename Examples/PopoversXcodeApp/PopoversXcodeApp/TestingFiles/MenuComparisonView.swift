@@ -90,9 +90,9 @@ struct MenuComparisonDestinationView: View {
                                 }
                             )
                             .clipped()
-                        
+
                         Templates.MenuDivider()
-                        
+
                         Templates.MenuItem {
                             iconName = "list.bullet"
                         } label: { pressed in
@@ -105,7 +105,7 @@ struct MenuComparisonDestinationView: View {
                             .padding(EdgeInsets(top: 14, leading: 18, bottom: 14, trailing: 18))
                             .background(pressed ? Templates.buttonHighlightColor : Color.clear) /// Add highlight effect when pressed.
                         }
-                        
+
                         Templates.MenuItem {
                             iconName = "keyboard"
                         } label: { pressed in
@@ -118,7 +118,7 @@ struct MenuComparisonDestinationView: View {
                             .padding(EdgeInsets(top: 14, leading: 18, bottom: 14, trailing: 18))
                             .background(pressed ? Templates.buttonHighlightColor : Color.clear) /// Add highlight effect when pressed.
                         }
-                        
+
                         Templates.MenuItem {
                             iconName = "bag"
                         } label: { pressed in
@@ -180,7 +180,7 @@ struct MenuImageView: View {
                 LinearGradient(
                     colors: [
                         Color(uiColor: color.offset(by: 0.2)),
-                        Color(uiColor: color),
+                        Color(uiColor: color)
                     ],
                     startPoint: .topLeading,
                     endPoint: .bottomTrailing

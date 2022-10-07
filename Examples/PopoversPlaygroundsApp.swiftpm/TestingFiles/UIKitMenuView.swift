@@ -23,7 +23,7 @@ class UIKitMenuViewController: UIViewController {
             $0.excludedFrames = { [weak self] in
                 guard let self = self else { return [] }
                 return [
-                    self.activateButton.windowFrame(),
+                    self.activateButton.windowFrame()
                 ]
             }
         }
@@ -104,7 +104,7 @@ class UIKitMenuViewController: UIViewController {
         stackView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
 
         return stackView

@@ -26,7 +26,7 @@ struct SelectionView: View {
             attributes: {
                 $0.position = .relative(
                     popoverAnchors: [
-                        .center,
+                        .center
                     ]
                 )
             }

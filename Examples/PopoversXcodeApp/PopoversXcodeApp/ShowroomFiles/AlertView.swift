@@ -33,7 +33,7 @@ struct AlertView: View {
                 $0.rubberBandingMode = .none
                 $0.position = .relative(
                     popoverAnchors: [
-                        .center,
+                        .center
                     ]
                 )
                 $0.presentation.animation = .easeOut(duration: 0.15)

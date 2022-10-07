@@ -30,7 +30,7 @@ struct RelativePositioningView: View {
                         .topRight,
                         .bottomRight,
                         .bottomLeft,
-                        .center,
+                        .center
                     ]
                 )
             }

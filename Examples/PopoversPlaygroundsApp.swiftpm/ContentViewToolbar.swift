@@ -50,7 +50,7 @@ struct ContentViewToolbar: ViewModifier {
                         attributes: {
                             $0.position = .relative(
                                 popoverAnchors: [
-                                    .center,
+                                    .center
                                 ]
                             )
                             $0.dismissal.mode = [.tapOutside]
@@ -139,7 +139,7 @@ struct InfoRowContainer<Content: View>: View {
                     LinearGradient(
                         colors: [
                             Color(uiColor: color.offset(by: 0.2)),
-                            Color(uiColor: color),
+                            Color(uiColor: color)
                         ],
                         startPoint: .topLeading,
                         endPoint: .bottomTrailing
@@ -187,7 +187,7 @@ struct InfoImage: View {
                         LinearGradient(
                             colors: [
                                 Color(uiColor: color.offset(by: 0.2)),
-                                Color(uiColor: color),
+                                Color(uiColor: color)
                             ],
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing

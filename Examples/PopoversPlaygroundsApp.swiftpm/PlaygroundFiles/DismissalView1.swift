@@ -27,7 +27,7 @@ struct DismissalView1: View {
                 $0.sourceFrameInset = UIEdgeInsets(16)
                 $0.position = .relative(
                     popoverAnchors: [
-                        .center,
+                        .center
                     ]
                 )
                 $0.dismissal.mode = .dragDown

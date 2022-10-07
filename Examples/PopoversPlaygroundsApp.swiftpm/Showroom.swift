@@ -64,7 +64,7 @@ struct ExampleShowroomRow<Content: View>: View {
                         LinearGradient(
                             colors: [
                                 Color(uiColor: color.offset(by: 0.2)),
-                                Color(uiColor: color),
+                                Color(uiColor: color)
                             ],
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing

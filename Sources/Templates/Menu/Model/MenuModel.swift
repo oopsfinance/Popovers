@@ -47,15 +47,15 @@ extension Templates {
         /// Get the menu button ID that intersects the drag gesture's touch location.
         func getItemID(from location: CGPoint) -> MenuItemID? {
             let matchingFrames = frames.filter { $0.value.contains(location) }
-            
+
             if matchingFrames.count > 1 {
                 print("[Popovers] Multiple menu items have the same frame. Make sure items don't overlay. If you can't resolve this, please file a bug report (https://github.com/aheze/Popovers/issues).")
             }
-            
+
             if let frame = matchingFrames.first {
                 return frame.key
             }
-            
+
             return nil
         }
 

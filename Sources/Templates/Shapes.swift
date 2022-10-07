@@ -20,7 +20,7 @@ public extension Templates {
 
         /// The shape's corner radius
         public var cornerRadius: CGFloat
-        
+
         /// Offset the arrow from the sides - otherwise it will overflow out of the corner radius.
         /// This is multiplied by the `cornerRadius`.
         /**

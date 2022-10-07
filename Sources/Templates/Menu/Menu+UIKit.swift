@@ -139,7 +139,7 @@ public extension Templates {
             popover.attributes.dismissal.excludedFrames = { [weak self] in
                 guard let self = self else { return [] }
                 return [
-                    self.sourceView.windowFrame(),
+                    self.sourceView.windowFrame()
                 ]
                     + configuration.excludedFrames()
             }

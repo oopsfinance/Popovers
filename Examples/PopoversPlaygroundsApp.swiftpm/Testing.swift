@@ -42,7 +42,7 @@ struct ExampleTestingRow: View {
                     LinearGradient(
                         colors: [
                             Color(uiColor: UIColor(hex: color).offset(by: 0.2)),
-                            Color(uiColor: UIColor(hex: color)),
+                            Color(uiColor: UIColor(hex: color))
                         ],
                         startPoint: .topLeading,
                         endPoint: .bottomTrailing

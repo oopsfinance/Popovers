@@ -49,7 +49,7 @@ struct ExampleUIKitRow<Content: View>: View {
                         LinearGradient(
                             colors: [
                                 Color(uiColor: color),
-                                Color(uiColor: .black),
+                                Color(uiColor: .black)
                             ],
                             startPoint: .topLeading,
                             endPoint: .bottomTrailing

@@ -31,7 +31,7 @@ struct PresentView: View {
                 $0.sourceFrameInset.top = -8
                 $0.position = .relative(
                     popoverAnchors: [
-                        .center,
+                        .center
                     ]
                 )
             }
@@ -81,7 +81,7 @@ class PresentViewController: UIViewController {
         NSLayoutConstraint.activate([
             stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
             stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
-            stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
 
         return stackView
@@ -138,7 +138,7 @@ class PresentViewPopover: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             label.centerXAnchor.constraint(equalTo: centerXAnchor),
-            label.centerYAnchor.constraint(equalTo: centerYAnchor),
+            label.centerYAnchor.constraint(equalTo: centerYAnchor)
         ])
     }
 }

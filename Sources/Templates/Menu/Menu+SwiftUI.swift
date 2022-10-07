@@ -109,7 +109,7 @@ public extension Templates {
                             $0.rubberBandingMode = .none
                             $0.dismissal.excludedFrames = {
                                 [
-                                    window.frameTagged(model.id),
+                                    window.frameTagged(model.id)
                                 ]
                                     + model.configuration.excludedFrames()
                             }
