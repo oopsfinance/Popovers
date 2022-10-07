@@ -35,7 +35,7 @@ struct NavigationDestinationView: View {
         }
         .cornerRadius(10)
         .padding()
-        .background(Color(uiColor: .secondarySystemBackground))
+        .background(Color(.secondarySystemBackground))
         .navigationBarTitleDisplayMode(.inline)
         .navigationViewStyle(.stack)
         .popover(present: $present) {

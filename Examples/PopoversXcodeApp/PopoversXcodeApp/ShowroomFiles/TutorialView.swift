@@ -117,11 +117,11 @@ struct TutorialViewPopover: View {
                             }
                             .cornerRadius(16)
                     }
-                    .background {
+                    .background(
                         Color.white.opacity(0.5)
                             .cornerRadius(16)
                             .padding(selection == "Step 1" ? -8 : 0)
-                    }
+                    )
                     .padding()
                     .popover(
                         selection: $selection,

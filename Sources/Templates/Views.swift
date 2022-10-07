@@ -58,11 +58,7 @@ public extension Templates {
                     if child.id != last {
                         Divider()
                             .opacity(color == nil ? 1 : 0)
-                            .overlay {
-                                if let color = color {
-                                    Color(uiColor: color)
-                                }
-                            }
+                            .overlay(color != nil ? Color(color!) : nil)
                             .padding(.leading, leadingMargin)
                             .padding(.trailing, trailingMargin)
                     }

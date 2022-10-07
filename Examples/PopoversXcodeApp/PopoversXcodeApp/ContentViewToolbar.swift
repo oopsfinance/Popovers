@@ -76,7 +76,7 @@ struct ContentViewToolbar_Previews: PreviewProvider {
 
 struct InfoView: View {
     let uiColor = UIColor(hex: 0x007EEF)
-    let color = Color(uiColor: UIColor(hex: 0x007EEF))
+    let color = Color(UIColor(hex: 0x007EEF))
 
     var body: some View {
         VStack(spacing: 12) {
@@ -181,7 +181,7 @@ struct InfoImage: View {
             .foregroundColor(.white)
             .font(.system(size: 17, weight: .medium))
             .padding(8)
-            .background {
+            .background(
                 Circle()
                     .fill(
                         LinearGradient(
@@ -193,7 +193,7 @@ struct InfoImage: View {
                             endPoint: .bottomTrailing
                         )
                     )
-            }
+            )
     }
 }
 
