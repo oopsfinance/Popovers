@@ -50,12 +50,14 @@ public struct WindowReader<Content: View>: View {
     public init(@ViewBuilder view: @escaping (UIWindow?) -> Content) {
         self.view = view
     }
-
+    
     public var body: some View {
-        view(windowViewModel.window)
-            .background(
-                WindowHandlerRepresentable(windowViewModel: windowViewModel)
-            )
+        // TODO: Fix multi window support on iOS 14 (or drop iOS 14 support)
+        view(UIApplication.shared.keyWindow)
+        //        view(windowViewModel.window)
+        //            .background(
+        //                WindowHandlerRepresentable(windowViewModel: windowViewModel)
+        //            )
     }
 
     /// A wrapper view to read the parent window.
